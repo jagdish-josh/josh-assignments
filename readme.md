@@ -1,0 +1,1 @@
+This repository shows the assignment completed during the internship training in Josh Software.
