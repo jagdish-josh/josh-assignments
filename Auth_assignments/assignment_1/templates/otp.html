@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body { font-family: sans-serif; background-color: #cfcccc; }
+        form { max-width: 300px; margin: 100px auto; }
+        input { width: 100%; padding: 8px; margin: 6px 0; }
+        button { width: 100%; padding: 8px; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+
+<form method="POST" action="/otp">
+    <h2>Multi Factor Authentication</h2>
+
+    {{ if .Error }}
+      <p class="error">{{ .Error }}</p>
+    {{ end }}
+
+    <input type="number" name="otp" placeholder="otp" required>
+
+    <button type="submit">Verify</button>
+</form>
+
+</body>
+</html>
