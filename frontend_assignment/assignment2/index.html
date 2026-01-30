@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bug Fix Demo</title>
+</head>
+<body>
+
+  <button id="btn">Click</button>
+
+  <script>
+    // Event Listener Fix
+    const btn = document.getElementById("btn");
+    btn.addEventListener("click", handleClick);
+
+    function handleClick() {
+      alert("Clicked");
+    }
+  </script>
+
+</body>
+</html>
